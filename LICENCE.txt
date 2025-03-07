@@ -1,0 +1,6 @@
+Copyright (C) 2025 OSCARLEON
+
+Este software es propiedad exclusiva de OSCARLEON y está destinado únicamente para uso interno. 
+No está permitido su uso, copia, modificación o distribución sin autorización expresa.
+
+Para más información, contactar a: info@oscarleon.app
