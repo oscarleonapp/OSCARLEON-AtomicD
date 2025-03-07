@@ -24,24 +24,57 @@
   <link rel="stylesheet" href="styles/main.css">
 
 
+<!-- Iconos -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
 
 </head>
 <body>
   <nav class="navbar">
-    <div class="logo">Mi Sitio</div>
+    <div class="logo">OSCARLEON</div>
     <ul class="nav-links">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Servicios</a></li>
-        <li><a href="#">Acerca</a></li>
-        <li><a href="#">Contacto</a></li>
+              
+        <!-- Dropdown de Servicios -->
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Servicios <i class="bi bi-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+              <li><a href="#">Desarrollo Web</a></li>
+              <li><a href="#">Soporte Técnico</a></li>
+              <li><a href="#">Consultoría</a></li>
+          </ul>
+        </li>
+            
+        <!-- Dropdown de Productos -->
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Productos <i class="bi bi-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+              <li><a href="#">Software</a></li>
+              <li><a href="#">Accesorios</a></li>
+              <li><a href="#">Herramientas</a></li>
+          </ul>
+      </li>
+        <li><a href="#">Portafolio</a></li>
     </ul>
-    <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
+    <div class="theme-toggle">
+        <span>Claro</span>
+        <input type="checkbox" id="theme-switch">
+        <label for="theme-switch"></label>
+        <span>Oscuro</span>
     </div>
+    <a href="#" class="btn-contact">
+        <i class="icon-whatsapp"></i> Contactar
+    </a>
 </nav>
+
+<div class="hero">
+  <div class="hero-content">
+      <h1>Bienvenido a Mi Sitio</h1>
+      <p>Explora lo que tenemos para ti.</p>
+      <a href="#seccion" class="btn">Descubrir más</a>
+  </div>
+</div>
+
+
   <div class="container">
     <h1>Bienvenido</h1>
     <p>Este es un ejemplo de un container básico.</p>
