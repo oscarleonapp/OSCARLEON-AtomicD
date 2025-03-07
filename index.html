@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Mi Proyecto Accesible | Atomic Design</title>
+  
+  <!-- Metaetiquetas SEO y accesibilidad -->
+  <meta name="description" content="Un framework accesible basado en Atomic Design para desarrollo inclusivo, limpio y responsive.">
+  <meta name="author" content="Tu Nombre o Equipo">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mi Proyecto Accesible | Atomic Design">
+  <meta property="og:description" content="Un framework accesible basado en Atomic Design para desarrollo inclusivo, limpio y responsive.">
+  <meta property="og:image" content="https://ejemplo.com/imagen.jpg">
+  <meta property="og:url" content="https://ejemplo.com">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Enlace al los estilos Base -->
+  <link rel="stylesheet" href="styles/main.css">
+
+
+</head>
+<body>
+
+    <header class="navbar">
+        <h1>Mi Proyecto</h1>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <nav class="menu">
+          <a href="#home">Inicio</a>
+          <a href="#about">Acerca</a>
+          <a href="#services">Servicios</a>
+          <a href="#contact">Contacto</a>
+        </nav>
+      </header>
+      
+  <!-- Salto de navegación para accesibilidad -->
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- Encabezado accesible -->
+  <header class="navbar" role="banner">
+    <h1>Bienvenido a mi Proyecto</h1>
+    <nav aria-label="Menú principal">
+      <ul>
+        <li><a href="#section1">Sección 1</a></li>
+        <li><a href="#section2">Sección 2</a></li>
+        <li><a href="#section3">Sección 3</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main id="main-content" role="main">
+    <section id="section1" tabindex="0" aria-labelledby="section1-title">
+      <h2 id="section1-title">Sección 1</h2>
+      <p>Este es un ejemplo de sección con contenido inicial.</p>
+    </section>
+
+    <section id="section2" tabindex="0" aria-labelledby="section2-title">
+      <h2 id="section2-title">Sección 2</h2>
+      <p>Otra sección lista para personalizar.</p>
+    </section>
+
+    <section id="section3" tabindex="0" aria-labelledby="section3-title">
+      <h2 id="section3-title">Sección 3</h2>
+      <p>Añade más contenido aquí según tus necesidades.</p>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer role="contentinfo">
+    <p>&copy; 2025 Mi Proyecto. <a href="#main-content">Volver al inicio</a></p>
+  </footer>
+
+  <!-- Enlace a scripts -->
+  <script src="scripts/main.js"></script>
+</body>
+</html>

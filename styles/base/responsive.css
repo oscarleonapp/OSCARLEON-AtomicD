@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+    body {
+      font-size: var(--font-size-small);
+    }
+  }
+  
+  /* Muestra/oculta dependiendo del tamaño de la pantalla */
+@media (max-width: 992px) {
+    .d-lg-none { display: none; } /* Ocultar en pantallas grandes y mayores */
+    .d-lg-block { display: block; } /* Mostrar solo en pantallas grandes y mayores */
+  }
+  
+  @media (max-width: 768px) {
+    .d-md-none { display: none; } /* Ocultar en pantallas medianas y menores */
+    .d-md-block { display: block; } /* Mostrar solo en pantallas medianas y mayores */
+  }
+  
+  @media (max-width: 576px) {
+    .d-sm-none { display: none; } /* Ocultar en pantallas pequeñas y menores */
+    .d-sm-block { display: block; } /* Mostrar solo en pantallas pequeñas */
+  }
+  

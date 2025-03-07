@@ -1,0 +1,11 @@
+.home-header {
+    font-size: var(--font-size-large);
+    text-align: center;
+  }
+  
+  @media (max-width: 480px) {
+    .home-header {
+      font-size: var(--font-size-medium);
+    }
+  }
+  
