@@ -1,14 +1,54 @@
-.btn {
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    display: inline-block;
+.boton {
+  background-color: #007BFF; /* Color principal */
+  color: #ffffff; /* Texto en blanco */
+  border: none; /* Sin bordes */
+  padding: 10px 20px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño de la fuente */
+  border-radius: 4px; /* Esquinas ligeramente redondeadas */
+  cursor: pointer; /* Manita al pasar el cursor */
+  transition: background-color 0.3s ease; /* Animación suave */
 }
-.btn-primary {
-    background-color: var(--primary-color);
-    color: white;
+
+/* Cambios al interactuar */
+.boton:hover {
+  background-color: #0056b3; /* Color más oscuro */
 }
-.btn-secondary {
-    background-color: var(--secondary-color);
-    color: white;
+
+.boton:focus {
+  outline: 2px solid #ffcc00; /* Borde amarillo para accesibilidad */
+  outline-offset: 2px;
 }
+
+.boton:active {
+  background-color: #004080; /* Color más oscuro para el estado activo */
+}
+
+/* BTN - OSCARLEON WEB */
+.boton-oscarleon-dark {
+  background-color: #12a270; /* Color primario */
+  color: white; /* Texto en blanco */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Suavidad en la transición */
+}
+
+.boton-oscarleon-dark:hover {
+  background-color: #0e8459; /* Tono más oscuro */
+}
+
+.boton-oscarleon-claro {
+  background-color: #12a270; /* Color primario */
+  color: white; /* Texto en blanco */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Suavidad en la transición */
+}
+
+.boton-oscarleon-claro:hover {
+  background-color: #14b783; /* Tono más claro */
+}
+

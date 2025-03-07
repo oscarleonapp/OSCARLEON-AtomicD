@@ -1,5 +1,6 @@
-function toggleMenu() {
-    const menu = document.querySelector('.navbar .menu');
-    menu.classList.toggle('show');
-  }
-  
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});

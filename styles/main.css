@@ -1,2 +1,4 @@
-@import "./organisms/navbar.css";
-
+/* RESET */
+@import "./base/reset.css";
+/* Atomos */
+@import "./atoms/buttons.css";
