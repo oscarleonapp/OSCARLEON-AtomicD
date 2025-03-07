@@ -1,12 +1,2 @@
-@import "./base/reset.css";
-@import "./base/colors.css";
-@import "./atoms/buttons.css";
-@import "./atoms/inputs.css";
-@import "./molecules/cards.css";
-@import "./utilities.css";
-@import './utilities/variables.css';
-@import './utilities/text.css';
-@import './utilities/spacing.css';
-@import './utilities/colors.css';
-@import './utilities/borders.css';
-@import './utilities/display.css';
+@import "./organisms/navbar.css";
+

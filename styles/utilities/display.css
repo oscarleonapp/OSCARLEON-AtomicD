@@ -3,3 +3,10 @@
 @media (max-width: 768px) {
   .d-md-none { display: none; }
 }
+
+.d-flex { display: flex; }
+.d-grid { display: grid; }
+.d-inline-flex { display: inline-flex; }
+.d-table { display: table; }
+.d-table-row { display: table-row; }
+.d-table-cell { display: table-cell; }
