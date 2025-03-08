@@ -1,0 +1,212 @@
+/* Barra de Navegación */
+/* Estilos generales */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #008060;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #0e8459;
+}
+
+/* Dropdowns */
+.dropdown-menu {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    color: #333;
+    list-style: none;
+    padding: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.dropdown-menu li a {
+    color: black;
+    padding: 5px 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f0f0f0;
+    border-radius: 3px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Botón Contactar */
+.btn-contact {
+    background-color: #25D366; /* Verde WhatsApp */
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-contact:hover {
+    background-color: #1caa57;
+}
+
+.btn-contact .icon-whatsapp {
+    margin-right: 8px;
+}
+
+/* Theme toggle */
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.theme-toggle label {
+    cursor: pointer;
+    background-color: white;
+    width: 40px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 10px;
+    position: relative;
+}
+
+.theme-toggle label::before {
+    content: '';
+    background-color: #12a270;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    transition: all 0.3s;
+}
+
+#theme-switch:checked + label::before {
+    left: 21px;
+}
+
+#theme-switch {
+    display: none;
+}
+
+/* Dropdowns con transición */
+.dropdown-menu {
+    display: block; /* Para evitar que desaparezca inmediatamente */
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    color: #333;
+    list-style: none;
+    padding: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown:hover > a .dropdown-toggle i,
+.dropdown-menu:hover ~ .dropdown-toggle i {
+    transform: rotate(180deg);
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
+
+
+
+
+/* MENU TOGGLE */
+/* Ocultar menú en móviles */
+.menu-toggle {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #333;
+    display: none; /* Oculto en escritorio */
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Mostrar en móviles */
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: white;
+        padding: 10px 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+

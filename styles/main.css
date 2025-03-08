@@ -2,3 +2,8 @@
 @import "./base/reset.css";
 /* Atomos */
 @import "./atoms/buttons.css";
+
+/* Organismos */
+@import "./organisms/navbar-v1.css";
+@import "./organisms/hero-img-v1.css";
+
